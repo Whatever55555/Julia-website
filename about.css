@@ -200,13 +200,14 @@ p {
 @media only screen and (max-width:650px) {
      main {
          flex-direction: column;
+         top: 3rem;
          width: 340px;
          overflow: hidden;
      }
 
      .photo {
          width: 100%;
-         margin-bottom: 5rem;
+         margin-bottom: 2rem;
      }
 
      .photo img {
