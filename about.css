@@ -237,8 +237,8 @@ p {
 footer {
     width: 100%;
     display: flex;
-    position: relative;
-    top: 13rem;
+    position: absolute;
+    bottom: 0;
     text-align: center;
     justify-content: center;
     background-color: #333333;
@@ -249,4 +249,11 @@ footer {
 footer span {
     padding: 1rem;
     font-size: 0.8rem;
+}
+
+@media only screen and (max-width:650px) {
+    footer {
+        position: relative;
+        top: 13rem;
+    }
 }
