@@ -60,6 +60,7 @@ header {
     display: flex;
     z-index: 5;
     width: 100%;
+    overflow: hidden;
 }
 
 .header-container {
@@ -81,6 +82,63 @@ header ul {
 header li {
     padding: 2rem;
     font-size: 1.1rem;
+}
+
+.mobile {
+    display: none;
+}
+
+/* Mobile */
+
+@media only screen and (max-width:650px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+    }
+
+    .header-container {
+        width: 340px;
+    }
+
+    #menu-icon {
+        width: 30px;
+        height: auto;
+        padding-top: 2rem;
+    }
+
+    #myLinks {
+        display: none;
+      }
+    
+    .links-container {
+        display: flex;
+        width: 310px;
+        height: 64px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .links-container ul {
+        justify-content: space-evenly;
+        text-align: center;
+        width: 310px;
+        max-width: 100%;
+        margin-top: auto;
+    }
+
+    .links-container li {
+        max-width: 100%;
+        max-height: 100%;
+        padding: 0.5rem;
+        font-size: 1.3rem;
+        border: 2px #333333 solid;
+        border-radius: 15px;
+        color: white;
+        background-color: #333333;
+    }        
 }
 
 /* Main */
@@ -131,11 +189,46 @@ p {
     line-height: 1.5;
 }
 
-.icon {
+.socialicon {
     padding: 1rem;
     height: 50px;
     width: auto;
 }
+
+/* Mobile */
+
+@media only screen and (max-width:650px) {
+     main {
+         flex-direction: column;
+         width: 340px;
+         overflow: hidden;
+     }
+
+     .photo {
+         width: 100%;
+         margin-bottom: 5rem;
+     }
+
+     .photo img {
+         height: 220px;
+         width: 220px;
+     }
+
+     .text {
+         width: 100%;
+     }
+
+     h1 {
+         font-weight: 400;
+         font-size: 1.5rem;
+     }
+
+     p {
+        text-align: justify;
+     }
+}
+
+/* Footer */
 
 footer {
     width: 100%;

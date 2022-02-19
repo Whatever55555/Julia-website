@@ -60,6 +60,7 @@ header {
     display: flex;
     z-index: 5;
     width: 100%;
+    overflow: hidden;
 }
 
 .header-container {
@@ -83,6 +84,64 @@ header li {
     font-size: 1.1rem;
 }
 
+.mobile {
+    display: none;
+}
+
+/* Mobile */
+
+@media only screen and (max-width:650px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+    }
+
+    .header-container {
+        width: 340px;
+    }
+
+    #menu-icon {
+        width: 30px;
+        height: auto;
+        padding-top: 2rem;
+    }
+
+    #myLinks {
+        display: none;
+      }
+    
+    .links-container {
+        display: flex;
+        width: 310px;
+        height: 64px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .links-container ul {
+        justify-content: space-evenly;
+        text-align: center;
+        width: 310px;
+        max-width: 100%;
+        margin-top: auto;
+    }
+
+    .links-container li {
+        max-width: 100%;
+        max-height: 100%;
+        padding: 0.5rem;
+        font-size: 1.3rem;
+        border: 2px #333333 solid;
+        border-radius: 15px;
+        color: white;
+        background-color: #333333;
+    }
+        
+}
+
 /* Main */
 
 main {
@@ -102,6 +161,18 @@ h1 {
     margin-top: 1rem;
     height: 30px;
     width: auto;
+}
+
+/* Mobile */
+
+@media only screen and (max-width:650px) {
+    main {
+        width: 340px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
 }
 /* Gallery */
 
@@ -156,6 +227,21 @@ h1 {
     background-image: url(./images/7.jpg);
     background-size: cover;
     background-position: center; 
+}
+
+/* Mobile */
+
+@media only screen and (max-width:650px) {
+    .gallery {
+        display: grid;
+        margin: 2rem 0;
+        grid-template: 300px 165px 300px 300px 300px 165px 300px / 1fr;
+        gap: 0.5rem;
+    }
+
+    .big-photo {
+        grid-column: span 1;
+    }
 }
 
 /* Footer */
