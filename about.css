@@ -106,7 +106,6 @@ header li {
     #menu-icon {
         width: 30px;
         height: auto;
-        margin-top: 2rem;
     }
 
     #myLinks {
@@ -138,7 +137,11 @@ header li {
         border-radius: 15px;
         color: white;
         background-color: #333333;
-    }        
+    }
+
+    .icon {
+        margin-top: 2rem;
+    }
 }
 
 /* Main */
